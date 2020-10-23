@@ -1,0 +1,29 @@
+name: PANx4_test
+suffix: ~  # add suffix to saved images
+model: sr
+distortion: sr
+scale: 4
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+save_img: True
+gpu_ids: [0]
+
+datasets:
+  test1:
+    name: Engine
+    mode: LQGT
+    dataroot_GT: /content/drive/Shared drives/Team 1/PAN/codes/images/SR/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/benchmark/Set5/LR_bicubic/X4
+ 
+#### network structures
+network_G:
+  which_model_G: PAN
+  in_nc: 3
+  out_nc: 3
+  nf: 40
+  unf: 24
+  nb: 16
+  scale: 4
+
+#### path
+path:
+  pretrain_model_G: ../experiments/pretrained_models/PANx4_DF2K.pth
