@@ -11,8 +11,8 @@ datasets:
   test1:
     name: Engine
     mode: LQGT
-    dataroot_GT: /content/drive/Shared drives/Team 1/PAN/datasets/SET6/HR
-    dataroot_LQ: /content/drive/Shared drives/Team 1/PAN/datasets/SET6/LR_bicubic/X4
+    dataroot_GT: /content/drive/Shared drives/Team 1/PAN/datasets/Set6/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/PAN/datasets/Set6/LR_bicubic/X4
  
 #### network structures
 network_G:
