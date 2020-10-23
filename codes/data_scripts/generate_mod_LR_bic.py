@@ -19,7 +19,7 @@ def generate_mod_LR_bic():
     savedir = '../../datasets/Set6/'
 
     saveHRpath = os.path.join(savedir, 'HR', 'X' + str(mod_scale))
-    saveLRpath = os.path.join(savedir, 'LR', 'X' + str(up_scale))
+    saveLRpath = os.path.join(savedir, 'LR_bicubic', 'X' + str(up_scale))
     saveBicpath = os.path.join(savedir, 'Bic', 'X' + str(up_scale))
 
     if not os.path.isdir(sourcedir):
@@ -30,8 +30,8 @@ def generate_mod_LR_bic():
 
     if not os.path.isdir(os.path.join(savedir, 'HR')):
         os.mkdir(os.path.join(savedir, 'HR'))
-    if not os.path.isdir(os.path.join(savedir, 'LR')):
-        os.mkdir(os.path.join(savedir, 'LR'))
+    if not os.path.isdir(os.path.join(savedir, 'LR_bicubic')):
+        os.mkdir(os.path.join(savedir, 'LR_bicubic'))
     if not os.path.isdir(os.path.join(savedir, 'Bic')):
         os.mkdir(os.path.join(savedir, 'Bic'))
 
@@ -67,12 +67,12 @@ def generate_mod_LR_bic():
             image_HR = image[0:mod_scale * height, 0:mod_scale * width, :]
         else:
             image_HR = image[0:mod_scale * height, 0:mod_scale * width]
-        # LR
+        # LR_bicubic
         image_LR = imresize_np(image_HR, 1 / up_scale, True)
         # bic
         image_Bic = imresize_np(image_LR, up_scale, True)
 
-        cv2.imwrite(os.path.join(saveHRpath, filename), image_HR)
+        # cv2.imwrite(os.path.join(saveHRpath, filename), image_HR)
         cv2.imwrite(os.path.join(saveLRpath, filename), image_LR)
         cv2.imwrite(os.path.join(saveBicpath, filename), image_Bic)
 
