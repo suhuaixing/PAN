@@ -11,8 +11,8 @@ datasets:
   train:
     name: DIV2K
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/DIV2K_train800/HR_sub480
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/DIV2K_train800/LR_sub120
+    dataroot_GT: /content/drive/Shared drives/Team 1/DIV2K_train800/HR_sub480
+    dataroot_LQ: /content/drive/Shared drives/Team 1/DIV2K_train800/LR_sub120
     
     use_shuffle: true
     n_workers: 6  # per GPU

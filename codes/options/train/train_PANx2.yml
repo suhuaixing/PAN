@@ -12,8 +12,8 @@ datasets:
   train:
     name: DF2K
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/DF2K_train/HRx2_sub360
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/DF2K_train/LRx2_sub180
+    dataroot_GT: /content/drive/Shared drives/Team 1/DF2K_train/HRx2_sub360
+    dataroot_LQ: /content/drive/Shared drives/Team 1/DF2K_train/LRx2_sub180
     
     use_shuffle: true
     n_workers: 6  # per GPU

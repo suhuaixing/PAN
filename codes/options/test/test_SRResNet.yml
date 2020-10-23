@@ -11,28 +11,28 @@ datasets:
   test1:
     name: Set5
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/benchmark/Set5/HR
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/benchmark/Set5/LR_bicubic/X4
+    dataroot_GT: /content/drive/Shared drives/Team 1/benchmark/Set5/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/benchmark/Set5/LR_bicubic/X4
   test2:
     name: Set14
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/benchmark/Set14/HR
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/benchmark/Set14/LR_bicubic/X4
+    dataroot_GT: /content/drive/Shared drives/Team 1/benchmark/Set14/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/benchmark/Set14/LR_bicubic/X4
   test3:
     name: B100
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/benchmark/B100/HR
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/benchmark/B100/LR_bicubic/X4
+    dataroot_GT: /content/drive/Shared drives/Team 1/benchmark/B100/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/benchmark/B100/LR_bicubic/X4
   test4:
     name: Urban100
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/benchmark/Urban100/HR
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/benchmark/Urban100/LR_bicubic/X4
+    dataroot_GT: /content/drive/Shared drives/Team 1/benchmark/Urban100/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/benchmark/Urban100/LR_bicubic/X4
   test5:
     name: Manga109
     mode: LQGT
-    dataroot_GT: /mnt/hyzhao/Documents/datasets/benchmark/Manga109/HR
-    dataroot_LQ: /mnt/hyzhao/Documents/datasets/benchmark/Manga109/LR_bicubic/X4
+    dataroot_GT: /content/drive/Shared drives/Team 1/benchmark/Manga109/HR
+    dataroot_LQ: /content/drive/Shared drives/Team 1/benchmark/Manga109/LR_bicubic/X4
 #### network structures
 network_G:
   which_model_G: MSRResNet_PA

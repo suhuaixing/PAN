@@ -19,10 +19,10 @@ def main():
     # CV_IMWRITE_PNG_COMPRESSION from 0 to 9. A higher value means a smaller size and longer
     # compression time. If read raw images during training, use 0 for faster IO speed.
     if mode == 'single':
-#         opt['input_folder'] = '/mnt/hyzhao/Documents/datasets/DIV2K_train800/DIV2K_train_LR_bicubic/X4_blur'
-#         opt['save_folder'] = '/mnt/hyzhao/Documents/datasets/DIV2K_train800/DIV2K_train_LR_bicubic/X4_blur_sub'
-        opt['input_folder'] = '/mnt/hyzhao/Documents/datasets/DIV2K_train800/DIV2K_train_Bic'
-        opt['save_folder'] = '/mnt/hyzhao/Documents/datasets/DIV2K_train800/DIV2K_train_Bic/Bic_sub480'
+#         opt['input_folder'] = '/content/drive/Shared drives/Team 1/DIV2K_train800/DIV2K_train_LR_bicubic/X4_blur'
+#         opt['save_folder'] = '/content/drive/Shared drives/Team 1/DIV2K_train800/DIV2K_train_LR_bicubic/X4_blur_sub'
+        opt['input_folder'] = '/content/drive/Shared drives/Team 1/DIV2K_train800/DIV2K_train_Bic'
+        opt['save_folder'] = '/content/drive/Shared drives/Team 1/DIV2K_train800/DIV2K_train_Bic/Bic_sub480'
         opt['crop_sz'] = 480  # the size of each sub-image
         opt['step'] = 120  # step of the sliding crop window
         opt['thres_sz'] = 48  # size threshold
@@ -33,10 +33,10 @@ def main():
 #         save_GT_folder = '../../datasets/DIV2K/DIV2K800_sub'
 #         save_LR_folder = '../../datasets/DIV2K/DIV2K800_sub_bicLRx4'
 
-        GT_folder = '/mnt/hyzhao/Documents/datasets/DF2K_train/HR'
-        LR_folder = '/mnt/hyzhao/Documents/datasets/DF2K_train/LR/X3'
-        save_GT_folder = '/mnt/hyzhao/Documents/datasets/DF2K_train/HRx3_sub360'
-        save_LR_folder = '/mnt/hyzhao/Documents/datasets/DF2K_train/LRx3_sub120'
+        GT_folder = '/content/drive/Shared drives/Team 1/DF2K_train/HR'
+        LR_folder = '/content/drive/Shared drives/Team 1/DF2K_train/LR/X3'
+        save_GT_folder = '/content/drive/Shared drives/Team 1/DF2K_train/HRx3_sub360'
+        save_LR_folder = '/content/drive/Shared drives/Team 1/DF2K_train/LRx3_sub120'
         
         scale_ratio = 3
         crop_sz = 360  # the size of each sub-image (GT)

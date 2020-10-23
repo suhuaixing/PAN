@@ -15,8 +15,8 @@ def generate_mod_LR_bic():
     up_scale = 4
     mod_scale = 4
     # set data dir
-    sourcedir = '/mnt/hyzhao/Documents/datasets/DF2K_train/HR'
-    savedir = '/mnt/hyzhao/Documents/datasets/DF2K_train/'
+    sourcedir = '/content/drive/Shared drives/Team 1/DF2K_train/HR'
+    savedir = '/content/drive/Shared drives/Team 1/DF2K_train/'
 
     saveHRpath = os.path.join(savedir, 'HR', 'X' + str(mod_scale))
     saveLRpath = os.path.join(savedir, 'LR', 'X' + str(up_scale))

@@ -160,14 +160,14 @@ def vimeo90k(mode):
     # Set False for use limited memory
     BATCH = 5000  # After BATCH images, lmdb commits, if read_all_imgs = False
     if mode == 'GT':
-        img_folder = '/mnt/hyzhao/Documents/datasets/Vimeo90K/vimeo_septuplet/sequences'
-        lmdb_save_path = '/mnt/hyzhao/Documents/datasets/Vimeo90K/vimeo_septuplet/vimeo90k_train_GT.lmdb'
-        txt_file = '/mnt/hyzhao/Documents/datasets/Vimeo90K/vimeo_septuplet/sep_trainlist.txt'
+        img_folder = '/content/drive/Shared drives/Team 1/Vimeo90K/vimeo_septuplet/sequences'
+        lmdb_save_path = '/content/drive/Shared drives/Team 1/Vimeo90K/vimeo_septuplet/vimeo90k_train_GT.lmdb'
+        txt_file = '/content/drive/Shared drives/Team 1/Vimeo90K/vimeo_septuplet/sep_trainlist.txt'
         H_dst, W_dst = 256, 448
     elif mode == 'LR':
-        img_folder = '/mnt/hyzhao/Documents/datasets/Vimeo90K/vimeo_septuplet_matlabLRx4/sequences'
-        lmdb_save_path = '/mnt/hyzhao/Documents/datasets/Vimeo90K/vimeo_septuplet_matlabLRx4/vimeo90k_train_LR7frames.lmdb'
-        txt_file = '/mnt/hyzhao/Documents/datasets/Vimeo90K/vimeo_septuplet/sep_trainlist.txt'
+        img_folder = '/content/drive/Shared drives/Team 1/Vimeo90K/vimeo_septuplet_matlabLRx4/sequences'
+        lmdb_save_path = '/content/drive/Shared drives/Team 1/Vimeo90K/vimeo_septuplet_matlabLRx4/vimeo90k_train_LR7frames.lmdb'
+        txt_file = '/content/drive/Shared drives/Team 1/Vimeo90K/vimeo_septuplet/sep_trainlist.txt'
         H_dst, W_dst = 64, 112
     elif mode == 'flow':
         img_folder = '../../datasets/vimeo90k/vimeo_septuplet/sequences_flowx4'

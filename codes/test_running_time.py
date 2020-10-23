@@ -11,7 +11,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 
 def main():
     ## test dataset
-    test_d = sorted(glob.glob('/mnt/hyzhao/Documents/datasets/DIV2K_test/*.png'))
+    test_d = sorted(glob.glob('/content/drive/Shared drives/Team 1/DIV2K_test/*.png'))
 
     torch.cuda.current_device()
     torch.cuda.empty_cache()
